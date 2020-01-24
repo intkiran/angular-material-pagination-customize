@@ -4,6 +4,8 @@ import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {StyledPaginatorDirective} from './app/styled-paginator.directive';
+
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -92,7 +94,7 @@ export class DemoMaterialModule {}
     ReactiveFormsModule,
   ],
   entryComponents: [TableOverviewExample],
-  declarations: [TableOverviewExample],
+  declarations: [TableOverviewExample,StyledPaginatorDirective],
   bootstrap: [TableOverviewExample],
   providers: []
 })
